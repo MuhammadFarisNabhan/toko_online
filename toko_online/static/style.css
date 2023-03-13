@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ===================== Global Styles ===================== */
+
+body {
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 4px 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* ===================== Header Start ===================== */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+/* ===================== Bagian Navbar ===================== */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.active {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.nav__icon {
+    font-size: 1rem;
+}
+
+#navbar li a:hover,
+#navbar li a.nam_i {
+    color: #088178;
+}
+
+#navbar li a.nam_i:after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 35px;
+}
+
+
+/* ===================== Menghilangkan icon close pada tampilan dekstop ===================== */
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+
+/* ===================== SIGN IN =====================  */
+
+#hero {
+    background: rgb(209, 231, 240);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 30px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h1 {
+    margin: 10px 0 15px 0;
+}
+
+#hero p {
+    margin: 3px 0 3px 0;
+}
+
+#hero .lgn {
+    margin: 15px 0;
+}
+
+#hero button {
+    margin: 15px 15px 15px 0;
+}
+
+button.btn {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 55px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+#hero button:hover {
+    background: #088178;
+    color: aliceblue;
+}
+
+#hero img {
+    float: left;
+    margin: 50%;
+}
+
+.card h4{
+    position:sticky;
+    text-align: center;
+    padding: 0px 0px 5px;
+}
+
+.card #hr-signup{
+    background-color: #000;
+    height: 2px;
+    margin-bottom: 20px;
+}
+
+/* ===================== Sign Up =====================  */
+
+.card{
+    position:absolute;
+    top: 46%;
+    left: 50%;
+    width: 400px;
+    padding: 60px;
+    transform: translate(-50%, -50%);
+    background: #a8c7e4;
+    box-sizing: border-box;
+    box-shadow: 0 10px 25px rgba(0, 0, 0,.5);
+    border-radius: 10px;
+}
+
+.card li{
+    justify-content: center;
+}
+
+.card li input[type=text],
+.card li input[type=email],
+.card li input[type=password] {
+    display: block;
+    position : inline-block;
+    margin: 5px;
+    width: 270px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #eaf0eb;
+    border: 3px solid #a8c7e4;
+    font-size: medium;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.card li input[type=text]:focus{
+    border:3px solid #919191;
+}
+.card li input[type=email]:focus{
+    border:3px solid #919191;
+}
+.card li input[type=password]:focus{
+    border:3px solid #919191;
+}
+
+.card li input[type=button]{
+    margin: 10px 5px;
+    width: 270px;
+    padding: 8px 0 5px 0;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: 600;
+    border: 2px solid #40e453;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #40e453;
+}
+
+.card li input[type=button]:hover{
+    background-color: #000;
+    border: 2px solid #40e453;
+    color: #40e453;
+}
+
+.card p{
+    padding: 15px 0 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 200;
+    color: #1a1a1a;
+}
+
+.card p a{
+    color: #000;
+    font-weight: 400;
+}
+
+/* ===================== Produk 1 =====================  */
+
+#product1 {
+    text-align: center;
+}
+
+.pro-p1 {
+    padding: 40px 80px;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.pro li{
+    list-style: none;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 12px;
+    ;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #088178;
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 9px;
+}
+
+
+/* ===================== KATEGORI 1 =====================  */
+
+#kategori1 {
+    text-align: center;
+    margin: 0 80px;
+}
+
+.kt-p1 {
+    padding: 30px 80px;
+}
+
+#kategori1 .feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#kategori1 .feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 20px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+#kategori1 .feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#kategori1 .feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#kategori1 .feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+#kategori1 .feature .fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+
+#kategori1 .feature .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+
+#kategori1 .feature .fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+
+#kategori1 .feature .fe-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+
+#kategori1 .feature .fe-box:nth-child(6) h6 {
+    background-color: #fff2e5;
+}
+
+
+/* ===================== Footer =====================  */
+
+footer {
+    background-image: url("img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer1 {
+    padding: 40px 80px;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    color: #fff;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    color: #fff;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow .footer__social {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+/* ===================== Home Page ===================== */
