@@ -278,6 +278,11 @@ button.btn {
     font-weight: 400;
 }
 
+.card p a:hover{
+    color:#0f568d;
+    text-decoration: underline;
+}
+
 /* ===================== Produk 1 =====================  */
 
 #product1 {
