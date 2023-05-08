@@ -1,0 +1,52 @@
+admin
+
+home
+
+dasboard
+
+data_penjualan:
+-
+
+owner:
+
+produk barang:
+- barang pokok
+- snaks
+- barang basah
+
+atribut produk/barang:
+- id barang
+- nama
+- deskripsi
+- harga
+- gambar produk
+
+kate
+
+pelanggan/nama_toko:
+- id pelanggan
+- nama pelanggan/ nama toko
+- email
+- alamat
+
+pesanan:
+- id pesanan
+- id pelanggan
+- tanggal pesanan
+- jumlah total
+
+detail pesanan:
+- id detail pesanan
+- id pesanan
+- id barang
+- nama produk
+- harga produk
+- jumlah barang
+- total harga
+
+karyawan:
+- nama
+- usia
+- tampat 
+- spesialisasi
+
